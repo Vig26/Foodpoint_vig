@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fargment.FavoritesFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/favempty"
+        android:visibility="gone"
+        android:background="#ffffff"
+        >
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/ic_favres"
+            android:layout_centerInParent="true"
+            android:id="@+id/favt"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/you_do_not_have_any_favorite_restaurants"
+            android:textSize="22sp"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:layout_below="@id/favt"
+            android:layout_margin="20sp"
+            android:gravity="center_horizontal" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/recyclerfav"
+        />
+
+
+
+</RelativeLayout>

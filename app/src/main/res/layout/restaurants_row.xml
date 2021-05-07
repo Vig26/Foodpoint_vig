@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="4dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:background="#FDDBDB"
+    android:id="@+id/content"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_margin="10dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="5dp"
+        android:elevation="3dp">
+    <ImageView
+        android:id="@+id/imglist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        />
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_weight="4.6"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textColor="#000000"
+            android:text="@string/restaurant_name"
+            android:textSize="17sp"
+            android:id="@+id/restaurantname"
+            />
+
+        <TextView
+            android:id="@+id/restaurantprice"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/restaurantname"
+            android:layout_marginTop="25dp"
+            android:text="@string/rs"
+            android:textSize="17sp" />
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="@string/_100"
+            android:textSize="17sp"
+            android:layout_below="@id/restaurantname"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@id/restaurantprice"
+            android:id="@+id/price"
+            />
+        <TextView
+            android:layout_below="@id/restaurantname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@id/price"
+            android:text="@string/person"
+            android:textSize="17sp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.4">
+
+        <ImageView
+            android:id="@+id/favoriteRestaurants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_favrows" />
+
+        <TextView
+            android:id="@+id/ratingres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textAlignment="center"
+            android:layout_below="@id/favoriteRestaurants"
+            android:layout_marginBottom="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:text="@string/_3_3"
+            android:drawableLeft="@drawable/ic_rat"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
+
+    </RelativeLayout>
+</LinearLayout>
+</androidx.cardview.widget.CardView>

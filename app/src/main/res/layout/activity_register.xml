@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff9800"
+    tools:context=".activity.RegisterActivity">
+
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:background="@color/colorPrimary"
+        android:id="@+id/registertoolbar"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:drawableLeft="@drawable/namereg"
+        android:layout_below="@id/registertoolbar"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:hint="@string/name_min_3_characters"
+        android:background="#ffffff"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:maxLength="20"
+        android:id="@+id/edittxtname"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:drawableLeft="@drawable/mailreg"
+        android:layout_below="@id/edittxtname"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:hint="@string/email_address"
+        android:background="#ffffff"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        android:id="@+id/edittxtemail"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:drawableLeft="@drawable/mobilenum"
+        android:layout_below="@id/edittxtemail"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:hint="@string/mobile_number"
+        android:background="#ffffff"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:maxLength="10"
+        android:id="@+id/edittxtmobilereg"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:drawableLeft="@drawable/deliveryadd"
+        android:layout_below="@id/edittxtmobilereg"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:hint="@string/delivery_address"
+        android:background="#ffffff"
+        android:inputType="textPostalAddress"
+        android:textSize="20sp"
+        android:maxLength="20"
+        android:id="@+id/edittxtdeliveryadd"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:drawableLeft="@drawable/password"
+        android:layout_below="@id/edittxtdeliveryadd"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:hint="@string/password_min_4_characters"
+        android:background="#ffffff"
+        android:inputType="numberPassword"
+        android:textSize="20sp"
+        android:maxLength="20"
+        android:id="@+id/edittxtpasswordreg"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:drawableLeft="@drawable/password"
+        android:layout_below="@id/edittxtpasswordreg"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:hint="@string/confirm_password"
+        android:background="#ffffff"
+        android:inputType="numberPassword"
+        android:textSize="20sp"
+        android:maxLength="20"
+        android:id="@+id/edittxtconfirmpassreg"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:layout_marginTop="50dp"
+        android:textAllCaps="false"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:layout_below="@id/edittxtconfirmpassreg"
+        android:padding="5dp"
+        android:id="@+id/btbregister"
+        />
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff9800"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/forgot"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:padding="4dp"
+        android:id="@+id/imgview"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:drawableLeft="@drawable/mobilenum"
+        android:hint="@string/mobile_number_10_digits"
+        android:background="#ffffff"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:maxLength="10"
+        android:layout_below="@+id/imgview"
+        android:id="@+id/edittxtmobilenum"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:drawableLeft="@drawable/password"
+        android:hint="@string/password"
+        android:background="#ffffff"
+        android:inputType="numberPassword"
+        android:maxLength="10"
+        android:textSize="20sp"
+        android:layout_below="@+id/edittxtmobilenum"
+        android:layout_marginTop="10dp"
+        android:id="@+id/edittxtpasword"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="#934A01"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:layout_below="@id/edittxtpasword"
+        android:padding="5dp"
+        android:id="@+id/btblogin"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:textColor="#ffffff"
+        android:id="@+id/forgotpass"
+        android:textSize="15sp"
+        android:layout_below="@id/btblogin"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/don_t_have_an_account_sign_up"
+        android:textColor="#ffffff"
+        android:id="@+id/register"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal" />
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fargment.OrderHistoryFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/your_previous_orders_are_listed_below"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:id="@+id/choose"
+        android:textStyle="bold"
+        />
+    <View
+        android:layout_below="@id/choose"
+        style="@style/Divider.Horizontal"
+        android:background="#000000"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/choose"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerorderhistory"
+        android:layout_marginTop="8dp"
+        />
+
+
+
+</RelativeLayout>

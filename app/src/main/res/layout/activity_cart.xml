@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CartActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:background="@color/colorPrimary"
+        android:id="@+id/carttoolbar"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+    <TextView
+        android:layout_below="@id/carttoolbar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ordering_from"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:id="@+id/orderfr"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/orderfrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/orderfr"
+        android:layout_below="@id/carttoolbar"
+        android:layout_toEndOf="@id/orderfr"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/restaurant_name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FF1E84EA"
+        android:layout_marginBottom="10dp"/>
+    <View
+        android:layout_below="@id/orderfrom"
+        style="@style/Divider.Horizontal"
+        android:background="#000000"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/orderfrom"
+        android:layout_marginTop="10dp"
+        android:id="@+id/cartrecycler"
+        android:layout_above="@id/cart"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnplaceOrder"
+        android:text="Place Order"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:background="@color/colorPrimary"
+        />
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

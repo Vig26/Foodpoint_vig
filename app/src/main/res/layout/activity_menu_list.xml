@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MenuListActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarmenulist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_scrollFlags="enterAlways"
+        />
+
+    <TextView
+        android:layout_below="@id/toolbarmenulist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_from_menu_listed_below"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:id="@+id/choose"
+        android:textStyle="bold"
+        />
+    <View
+        android:layout_below="@id/choose"
+        style="@style/Divider.Horizontal"
+        android:background="#000000"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/choose"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclermenulist"
+        android:layout_marginTop="8dp"
+        android:layout_above="@id/cart"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        >
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnproceedtoCart"
+        android:text="@string/proceed_to_cart"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        />
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:id="@+id/progresslayoutmenu">
+
+        <ProgressBar
+            android:id="@+id/progressbarmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

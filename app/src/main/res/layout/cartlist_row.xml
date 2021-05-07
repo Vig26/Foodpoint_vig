@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="5dp"
+    android:orientation="vertical"
+    android:elevation="4dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="6"
+        android:orientation="horizontal"
+        android:background="#F1EFF2"
+        >
+        <ImageView
+            android:layout_weight="0.4"
+            android:layout_width="0dp"
+            android:src="@drawable/ic_check"
+            android:layout_height="match_parent"
+            />
+    <TextView
+        android:layout_weight="4.1"
+        android:layout_width="0dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_height="match_parent"
+        android:text="@string/menuitem"
+        android:layout_marginLeft="15dp"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:id="@+id/cartitemName"
+        />
+        <TextView
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textStyle="normal"
+            android:text="@string/rss"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:layout_weight="1.0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/_500"
+            android:id="@+id/cartrupees"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

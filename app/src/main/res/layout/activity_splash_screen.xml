@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SplashScreenActivity"
+    android:background="#ff9800">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:src="@drawable/splashic"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:padding="4dp"
+        android:id="@+id/imgviewsplash"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/foodpoint"
+        android:layout_below="@id/imgviewsplash"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:padding="4dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:id="@+id/txtviewsplash"/>
+
+</RelativeLayout>
