@@ -16,7 +16,6 @@ e. Frequently Asked Questions(FAQs)
 f. Log out
 6. The app should be able to fetch the list of all restaurant from the internet using the link
 provided below:
-<http://13.235.250.119/v2/restaurants/fetch_result/>
 
 7. A ‘My Profile’ page (where the user’s name, phone number, and address is displayed).
 8. A ‘Favorites’ page (where the list of all favourite restaurants is displayed).
