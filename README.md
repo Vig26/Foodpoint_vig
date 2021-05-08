@@ -1,9 +1,7 @@
 # Foodpoint_vig
 Project Problem Statement:
 
-             A food ordering app that lists the restaurants and their menu items. Using that app, the users can order food items.
-Further, the users can also save the restaurants as favourites and view their order history. The app have developed using XML
-and Kotlin.
+             A food ordering app that lists the restaurants and their menu items. Using that app, the users can order food items.Further, the users can also save the restaurants as favourites and view their order history. The app have developed using XML and Kotlin.
 
 
 
