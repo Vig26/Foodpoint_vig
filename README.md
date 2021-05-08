@@ -9,8 +9,7 @@ Description:
 
 
 
-1. A ‘Welcome page’ which displays the logo and/or name of the app. Choose any name of
-your choice.
+1. A ‘Welcome page’ which displays the logo and/or name of the app.
 2. A ‘Login Page’ which asks for users’ mobile number and password.
 3. A ‘Registration Page’ which enables users to sign up for the app.
 4. A ‘Forgot Password Page’ which enables users to reset their password.
@@ -22,8 +21,7 @@ c. Favorite Restaurants
 d. Order History
 e. Frequently Asked Questions(FAQs)
 f. Log out
-6. The app should be able to fetch the list of all restaurant from the internet using the link
-provided below:
+6. The app should be able to fetch the list of all restaurant from the internet using the API given..
 
 7. A ‘My Profile’ page (where the user’s name, phone number, and address is displayed).
 8. A ‘Favorites’ page (where the list of all favourite restaurants is displayed).
@@ -35,6 +33,3 @@ questions)
 12. A ‘Restaurant Details’ page which displays the menu items of that particular restaurant,
 each item’s price and the option to add an item to cart.
 13. A ‘Cart’ which lists the items added to cart and the total amount to be paid.
-We have created a sample app for you. Please refer to it for a demo. However, we encourage
-you to use your own custom icons, logos, names, and colour theme. You can also change the
-colour theme and design of the application.
